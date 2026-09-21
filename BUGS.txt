@@ -1,0 +1,13 @@
+Bugs identified and fixed
+=========================
+
+1. testbed_description fails to build
+   File: testbed_description/CMakeLists.txt
+   Problem: colcon build fails with
+            CMake Error at CMakeLists.txt:24: Parse error. Expected "("
+            Last line was "ament_package" instead of "ament_package()".
+            testbed_gazebo depends on it, so the whole build stops.
+   Fix: ament_package -> ament_package()
+
+Other changes
+-------------

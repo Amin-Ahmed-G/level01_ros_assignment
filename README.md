@@ -4,7 +4,7 @@
 At ERIC Robotics, we’re big believers in building software with modularity. The nav2 stack reflects this perfectly with flexible, plugin-based framework, allowing you to pick and choose which pieces you need and run them independently. In this assignment, you’ll walk through the navigation workflow step by step—manually creating and calling actions—to bring an autonomous robot to life.
 
 **Here’s what to do:**
-1. We have shared some starter code for the 'Testbed-T1.0.0', a simple open-source robot developed by the team here at ERIC Robotics. Your task is to develop a new ROS2 package called `testbed_navigation` to manage the navigation workflow for this robot.
+1. We have shared some starter code for the 'Testbed-T1.0.0', a simple open-source robot developed by the team here at ERIC Robotics. **Please note that there are some bugs intentionally left in the starter code that you will need to identify and fix.** Your task is to develop a new ROS2 package called `testbed_navigation` to manage the navigation workflow for this robot.
 2. However, rather than simply calling `nav2_bringup`, in this assignment you will manually build the required action components (i.e., using the `map_server`, `amcl`, `planner` plugins, and `bt_` plugins) to run ros2 navigation, by working directly with the respective `nav2` plugins.
 3. i.e., In the `testbed_navigation` package, write individual launch files to load a map, perform localization, and navigate using the plugins provided by `nav2`.
 4. Document your process so we can see how you tackled the task.
@@ -13,7 +13,7 @@ This assignment gives you hands-on experience with ROS2’s navigation plugins, 
 
 ### Deadline & submissions
 1. Four days (96 hrs) from the moment you accept the assignment.
-2. To submit your code, simply commit and push to your GitHub repository online. You can commit any number of times before your deadline.
+2. All applicants should fork the repository for the assignment. To submit your code, after completion create a Pull Request (PR) back to the `main` branch. You can commit any number of times to your fork before your deadline.
 
 ## Repository Structure
 
@@ -57,10 +57,10 @@ To get started, you’ll need:
     ```bash
     mkdir -p ~/assignment_ws/src
     ```
-2. Clone this repository:
+2. Fork this repository to your GitHub account, then clone your fork:
    ```bash
    cd ~/assignment_ws/src
-   git clone <repository-url>
+   git clone <your-fork-url>
    ```
 2. Build the workspace:
    ```bash

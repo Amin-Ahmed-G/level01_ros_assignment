@@ -38,5 +38,12 @@ Bugs identified and fixed
    Fix: fixed_base_joint origin 0 0 0 -> 0.0505 0.0378 0 (midpoint of
         the two wheel joints). Now it stays in place when turning.
 
+6. Missing dependencies in package.xml
+   Files: testbed_description/, testbed_gazebo/, testbed_bringup/ package.xml
+   Problem: launch files use xacro, gazebo_ros, joint_state_publisher etc.
+            but none of them were in package.xml, so rosdep install on a
+            clean Humble setup doesn't install them.
+   Fix: added exec_depend for the packages used in the launch files
+
 Other changes
 -------------

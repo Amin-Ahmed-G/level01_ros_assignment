@@ -23,5 +23,12 @@ Bugs identified and fixed
             The actual file in maps/ is testbed_world.pgm.
    Fix: changed image to testbed_world.pgm
 
+4. maps folder not installed
+   File: testbed_bringup/CMakeLists.txt
+   Problem: install() only had launch, so there was no maps folder in
+            install/testbed_bringup/share/testbed_bringup/. A launch
+            file using the package path can't find the map.
+   Fix: added maps to install(DIRECTORY ...)
+
 Other changes
 -------------

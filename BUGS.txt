@@ -47,3 +47,6 @@ Bugs identified and fixed
 
 Other changes
 -------------
+- testbed.gazebo: removed libgazebo_ros_control.so plugin (ROS1 only,
+  gazebo logged "Failed to load plugin"). diff_drive plugin does the driving.
+- testbed.gazebo: removed extra ">" after initial_orientation_as_reference

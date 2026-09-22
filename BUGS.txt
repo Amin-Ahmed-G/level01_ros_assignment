@@ -52,3 +52,5 @@ Other changes
 - testbed.gazebo: removed extra ">" after initial_orientation_as_reference
 - robot_description.launch.py: set use_sim_time for robot_state_publisher,
   it was the only node not on sim time
+- testbed_gazebo/CMakeLists.txt: install models folder, the launch file
+  adds it to GAZEBO_MODEL_PATH but it was never installed

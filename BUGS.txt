@@ -30,5 +30,13 @@ Bugs identified and fixed
             file using the package path can't find the map.
    Fix: added maps to install(DIRECTORY ...)
 
+5. base_footprint not at centre of rotation
+   File: testbed_description/urdf/testbed.xacro
+   Problem: turning in place (j/l only) made base_footprint move in a
+            circle of about 6 cm radius in RViz. It was at the base_link
+            origin, not between the wheels.
+   Fix: fixed_base_joint origin 0 0 0 -> 0.0505 0.0378 0 (midpoint of
+        the two wheel joints). Now it stays in place when turning.
+
 Other changes
 -------------

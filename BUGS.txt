@@ -9,5 +9,12 @@ Bugs identified and fixed
             testbed_gazebo depends on it, so the whole build stops.
    Fix: ament_package -> ament_package()
 
+2. LiDAR range too short
+   File: testbed_description/urdf/testbed.gazebo
+   Problem: /scan range_max was 1.5 m. Nearest wall from spawn is ~3.4 m,
+            so all beams came back out of range and nothing showed up
+            in RViz. Not usable for AMCL or costmaps in a 20x20 m world.
+   Fix: <max> 1.5 -> 12.0 (RPLIDAR A1/A2 range)
+
 Other changes
 -------------

@@ -16,5 +16,12 @@ Bugs identified and fixed
             in RViz. Not usable for AMCL or costmaps in a 20x20 m world.
    Fix: <max> 1.5 -> 12.0 (RPLIDAR A1/A2 range)
 
+3. Wrong image name in map yaml
+   File: testbed_bringup/maps/testbed_world.yaml
+   Problem: map_server failed on configure with
+            "Failed to load image file .../wrong_path_testbed_world.pgm".
+            The actual file in maps/ is testbed_world.pgm.
+   Fix: changed image to testbed_world.pgm
+
 Other changes
 -------------

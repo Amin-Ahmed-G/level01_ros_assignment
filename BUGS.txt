@@ -54,3 +54,5 @@ Other changes
   it was the only node not on sim time
 - testbed_gazebo/CMakeLists.txt: install models folder, the launch file
   adds it to GAZEBO_MODEL_PATH but it was never installed
+- testbed.gazebo: Gazebo/Silver isn't a Gazebo 11 material (gzclient logs
+  "Unable to get Material", robot shows white). Changed to Gazebo/Grey.

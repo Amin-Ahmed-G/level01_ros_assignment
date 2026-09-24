@@ -43,7 +43,9 @@ Bugs identified and fixed
    Problem: launch files use xacro, gazebo_ros, joint_state_publisher etc.
             but none of them were in package.xml, so rosdep install on a
             clean Humble setup doesn't install them.
-   Fix: added exec_depend for the packages used in the launch files
+            gazebo_plugins was also missing (found on a fresh clone), so
+            there was no /odom or /scan.
+   Fix: added exec_depend for the missing packages
 
 Other changes
 -------------

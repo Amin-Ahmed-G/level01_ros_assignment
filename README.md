@@ -2,6 +2,14 @@
 
 In this assignment I fixed the bugs I found in the starter code and wrote my own `testbed_navigation` package. My launch files bring up map_server, AMCL and the Nav2 servers one by one, without using nav2_bringup.
 
+## Demo
+
+[![Demo video](https://img.youtube.com/vi/YqaQvPbJf5Q/0.jpg)](https://youtu.be/YqaQvPbJf5Q)
+
+| Localization (wrong initial pose) | AMCL correcting | Navigation |
+|---|---|---|
+| ![](docs/images/localization_start.png) | ![](docs/images/localization_converging.png) | ![](docs/images/navigation.png) |
+
 ## Environment
 
 - ROS 2 Humble, Gazebo 11 (classic), RViz2
